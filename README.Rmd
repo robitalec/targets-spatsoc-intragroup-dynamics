@@ -1,0 +1,43 @@
+---
+output: github_document
+always_allow_html: true
+---
+
+
+<!-- TODO: [![DOI](https://zenodo.org/badge/TODO.svg)](https://zenodo.org/badge/latestdoi/TODO) -->
+
+
+# targets-spatsoc-intragroup-dynamics
+
+A template [`targets`](https://github.com/ropensci/targets) workflow for
+measuring intragroup social dynamics from GPS data with
+[`spatsoc`](https://github.com/ropensci/spatsoc/).
+
+```{r, echo=FALSE, message = FALSE, results='asis'}
+cat(
+  '```mermaid', 
+  targets::tar_mermaid(reporter = 'silent', label = 'description'), 
+  '```', 
+  sep = '\n'
+)
+```
+
+
+
+## Usage
+
+1. Clone/fork/download/etc make your own copy somewhere!
+2. Add your data to the input folder (and remove the example data)
+3. Open `_targets.R`
+4. Change the global variables in the Variables section
+6. Run `targets::tar_make()`
+
+## Resources
+
+- {spatsoc} 
+  - https://docs.ropensci.org/spatsoc/
+- {targets}
+  - https://docs.ropensci.org/targets
+  - https://books.ropensci.org/targets
+  
+  
