@@ -184,5 +184,11 @@ target_list <- c(
       id = id
     )
   ),
+
+  tar_target(
+    edge_delay_leaders,
+    leader_edge_delay(
+      edges = delay_edges
+    )
   )
 )
