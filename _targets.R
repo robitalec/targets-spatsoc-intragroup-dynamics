@@ -172,9 +172,9 @@ target_list <- c(
       n_min_length = n_min_length,
       n_max_missing = n_max_missing,
       allow_split = allow_split
-    )
+    ),
+    description = 'fusion_id()'
   ),
-  description = 'fusion_id()',
 
   tar_target(
     delay_edges,
