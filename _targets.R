@@ -121,3 +121,12 @@ target_list <- c(
     description = 'direction_to_leader()'
   ),
 
+  tar_target(
+    distance_to_group_dir_leaders,
+    distance_to_leader(
+      group_direction_leaders,
+      coords = coords
+    ),
+    description = 'distance_to_leader()'
+  )
+)
