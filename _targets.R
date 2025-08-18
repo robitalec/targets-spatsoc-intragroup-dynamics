@@ -194,5 +194,16 @@ target_list <- c(
     ),
     description = 'leader_edge_delay()'
   ),
+
+  tar_target(
+    fusion_centroids,
+    centroid_fusion(
+      edges = id_fusions,
+      DT = spatial_groups,
+      id = id,
+      coords = coords
+    ),
+    description = 'centroid_fusion()'
+  ),
   )
 )
