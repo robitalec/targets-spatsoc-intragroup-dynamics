@@ -34,6 +34,10 @@ projection <- 32736
 timegroup <- 'timegroup'
 group <- 'group'
 
+# edge_dist
+returnDist <- TRUE
+fillNA <- FALSE
+
 # dyad_id
 id1 <- 'ID1'
 id2 <- 'ID2'
@@ -149,7 +153,8 @@ target_list <- c(
       id = id,
       coords = coords,
       timegroup = timegroup,
-      returnDist = TRUE
+      returnDist = returnDist,
+      fillNA = fillNA
     ),
     description = 'edge_dist()'
   ),
