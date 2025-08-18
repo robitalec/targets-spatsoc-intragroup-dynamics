@@ -1,5 +1,5 @@
 
-[![DOI](https://zenodo.org/badge/16898183.svg)](https://doi.org/10.5281/zenodo.16898183)
+[![DOI](https://zenodo.org/badge/1038067070.svg)](https://doi.org/10.5281/zenodo.16898183)
 
 # targets-spatsoc-intragroup-dynamics
 
