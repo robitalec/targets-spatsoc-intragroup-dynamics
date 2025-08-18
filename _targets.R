@@ -148,7 +148,7 @@ target_list <- c(
   tar_target(
     distance_edges,
     edge_dist(
-      DT = step_directions,
+      DT = temporal_groups,
       threshold = spatial_threshold,
       id = id,
       coords = coords,
@@ -204,7 +204,7 @@ target_list <- c(
     fusion_centroids,
     centroid_fusion(
       edges = id_fusions,
-      DT = spatial_groups,
+      DT = temporal_groups,
       id = id,
       coords = coords
     ),
@@ -215,7 +215,7 @@ target_list <- c(
     dyad_centroids,
     centroid_dyad(
       edges = id_dyads,
-      DT = spatial_groups,
+      DT = temporal_groups,
       id = id,
       coords = coords
     ),
