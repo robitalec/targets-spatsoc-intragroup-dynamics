@@ -214,7 +214,7 @@ target_list <- c(
   tar_target(
     dyad_centroids,
     centroid_dyad(
-      edges = id_fusions,
+      edges = id_dyads,
       DT = spatial_groups,
       id = id,
       coords = coords
