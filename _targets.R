@@ -205,5 +205,16 @@ target_list <- c(
     ),
     description = 'centroid_fusion()'
   ),
+
+  tar_target(
+    dyad_centroids,
+    centroid_dyad(
+      edges = id_fusions,
+      DT = spatial_groups,
+      id = id,
+      coords = coords
+    ),
+    description = 'centroid_dyad()'
+  ),
   )
 )
