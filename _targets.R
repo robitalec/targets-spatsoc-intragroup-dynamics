@@ -128,5 +128,18 @@ target_list <- c(
       coords = coords
     ),
     description = 'distance_to_leader()'
+  ),
+
+  tar_target(
+    distance_edges,
+    edge_dist(
+      DT = step_directions,
+      threshold = spatial_threshold,
+      id = id,
+      coords = coords,
+      returnDist = TRUE
+    ),
+    description = 'edge_dist()'
+  ),
   )
 )
