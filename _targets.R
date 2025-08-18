@@ -43,3 +43,13 @@ target_list <- c(
     fread(filepath),
     description = 'fread(filepath)'
   ),
+
+  tar_target(
+    prepared_dates,
+    prep_dates(
+      DT = input_data,
+      datetime = datetime
+    ),
+    description = 'prep_dates()'
+  ),
+
