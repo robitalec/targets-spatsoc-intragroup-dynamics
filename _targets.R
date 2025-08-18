@@ -5,11 +5,11 @@
 # Packages ----------------------------------------------------------------
 library(targets)
 library(tarchetypes)
-library(qs2)
+suppressPackageStartupMessages(library(qs2))
 
 library(data.table)
 library(spatsoc)
-library(units)
+suppressPackageStartupMessages(library(units))
 
 
 # Functions ---------------------------------------------------------------
