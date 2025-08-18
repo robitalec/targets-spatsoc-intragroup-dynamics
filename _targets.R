@@ -34,6 +34,9 @@ projection <- 32736
 timegroup <- 'timegroup'
 group <- 'group'
 
+# dyad_id
+id1 <- 'ID1'
+id2 <- 'ID2'
 
 
 # Targets -----------------------------------------------------------------
@@ -140,6 +143,16 @@ target_list <- c(
       returnDist = TRUE
     ),
     description = 'edge_dist()'
+  ),
+
+  tar_target(
+    id_dyads,
+    dyad_id(
+      DT = distance_edges,
+      id1 = id1,
+      id2 = id2
+    ),
+    description = 'dyad_id()'
   ),
   )
 )
