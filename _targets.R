@@ -183,13 +183,16 @@ target_list <- c(
       DT = step_directions,
       window = window,
       id = id
-    )
+    ),
+    description = 'edge_delay()'
   ),
 
   tar_target(
     edge_delay_leaders,
     leader_edge_delay(
       edges = delay_edges
-    )
+    ),
+    description = 'leader_edge_delay()'
+  ),
   )
 )
