@@ -75,3 +75,13 @@ target_list <- c(
     description = 'group_pts()'
   ),
 
+  tar_target(
+    step_directions,
+    direction_step(
+      DT = spatial_groups,
+      id = id,
+      coords = coords,
+      projection = projection
+    )
+  ),
+
