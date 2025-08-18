@@ -63,3 +63,15 @@ target_list <- c(
     description = 'group_times()'
   ),
 
+  tar_target(
+    spatial_groups,
+    group_pts(
+      DT = temporal_groups,
+      threshold = spatial_threshold,
+      id = id,
+      coords = coords,
+      timegroup = timegroup
+    ),
+    description = 'group_pts()'
+  ),
+
