@@ -53,3 +53,13 @@ target_list <- c(
     description = 'prep_dates()'
   ),
 
+  tar_target(
+    temporal_groups,
+    group_times(
+      DT = prepared_dates,
+      datetime = datetime,
+      threshold = temporal_threshold
+    ),
+    description = 'group_times()'
+  ),
+
