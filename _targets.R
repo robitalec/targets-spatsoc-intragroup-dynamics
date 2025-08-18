@@ -102,3 +102,13 @@ target_list <- c(
     description = 'centroid_group()'
   ),
 
+  tar_target(
+    group_direction_leaders,
+    leader_direction_group(
+      DT = group_centroids,
+      coords = coords,
+      return_rank = TRUE
+    ),
+    description = 'leader_direction_group()'
+  ),
+
