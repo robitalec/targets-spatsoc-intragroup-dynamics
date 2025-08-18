@@ -36,3 +36,10 @@ group <- 'group'
 
 
 
+# Targets -----------------------------------------------------------------
+target_list <- c(
+  tar_target(
+    input_data,
+    fread(filepath),
+    description = 'fread(filepath)'
+  ),
