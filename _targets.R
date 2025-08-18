@@ -43,6 +43,10 @@ n_min_length <- 3
 n_max_missing <- 1
 allow_split <- FALSE
 
+# edge_delay
+window <- 3
+
+
 # Targets -----------------------------------------------------------------
 target_list <- c(
   tar_target(
@@ -170,5 +174,15 @@ target_list <- c(
     )
   ),
   description = 'fusion_id()',
+
+  tar_target(
+    delay_edges,
+    edge_delay(
+      edges = id_fusions,
+      DT = step_directions,
+      window = window,
+      id = id
+    )
+  ),
   )
 )
