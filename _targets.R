@@ -85,3 +85,10 @@ target_list <- c(
     )
   ),
 
+  tar_target(
+    group_directions,
+    direction_group(
+      DT = step_directions
+    ),
+    description = 'direction_group()'
+  ),
