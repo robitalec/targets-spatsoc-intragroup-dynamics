@@ -38,6 +38,10 @@ group <- 'group'
 id1 <- 'ID1'
 id2 <- 'ID2'
 
+# fusion_id
+n_min_length <- 3
+n_max_missing <- 1
+allow_split <- FALSE
 
 # Targets -----------------------------------------------------------------
 target_list <- c(
@@ -154,5 +158,17 @@ target_list <- c(
     ),
     description = 'dyad_id()'
   ),
+
+  tar_target(
+    id_fusions,
+    fusion_id(
+      edges = id_dyads,
+      threshold = spatial_threshold,
+      n_min_length = n_min_length,
+      n_max_missing = n_max_missing,
+      allow_split = allow_split
+    )
+  ),
+  description = 'fusion_id()',
   )
 )
