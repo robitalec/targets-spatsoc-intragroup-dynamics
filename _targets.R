@@ -216,5 +216,13 @@ target_list <- c(
     ),
     description = 'centroid_dyad()'
   ),
+
+  tar_target(
+    polarization,
+    direction_polarization(
+      DT = step_directions
+    ),
+    description = 'direction_polarization()'
   )
+
 )
