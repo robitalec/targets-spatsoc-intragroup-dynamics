@@ -148,6 +148,7 @@ target_list <- c(
       threshold = spatial_threshold,
       id = id,
       coords = coords,
+      timegroup = timegroup,
       returnDist = TRUE
     ),
     description = 'edge_dist()'
