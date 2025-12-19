@@ -29,7 +29,7 @@ spatial_threshold <- 50
 datetime <- 'datetime'
 id <- 'ID'
 coords <- c('X', 'Y')
-projection <- 32736
+utm <- 32736
 
 timegroup <- 'timegroup'
 group <- 'group'
@@ -96,7 +96,6 @@ target_list <- c(
       DT = spatial_groups,
       id = id,
       coords = coords,
-      projection = projection
     )
   ),
 
