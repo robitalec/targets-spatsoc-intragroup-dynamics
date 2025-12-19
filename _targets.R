@@ -60,9 +60,15 @@ target_list <- c(
   ),
 
   tar_target(
+    prepared_geometry,
+    get_geometry(input_data, coords = coords, crs = utm),
+    description = 'get_geometry()'
+  ),
+
+  tar_target(
     prepared_dates,
     prep_dates(
-      DT = input_data,
+      DT = prepared_geometry,
       datetime = datetime
     ),
     description = 'prep_dates()'
