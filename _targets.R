@@ -90,7 +90,6 @@ target_list <- c(
       DT = temporal_groups,
       threshold = spatial_threshold,
       id = id,
-      coords = coords,
       timegroup = timegroup
     ),
     description = 'group_pts()'
@@ -100,8 +99,7 @@ target_list <- c(
     step_directions,
     direction_step(
       DT = spatial_groups,
-      id = id,
-      coords = coords,
+      id = id
     )
   ),
 
@@ -116,8 +114,7 @@ target_list <- c(
    tar_target(
     group_centroids,
     centroid_group(
-      DT = group_directions,
-      coords = coords
+      DT = group_directions
     ),
     description = 'centroid_group()'
   ),
@@ -126,7 +123,6 @@ target_list <- c(
     group_direction_leaders,
     leader_direction_group(
       DT = group_centroids,
-      coords = coords,
       return_rank = TRUE
     ),
     description = 'leader_direction_group()'
@@ -135,8 +131,7 @@ target_list <- c(
   tar_target(
     direction_to_group_dir_leaders,
     direction_to_leader(
-      DT = group_direction_leaders,
-      coords = coords
+      DT = group_direction_leaders
     ),
     description = 'direction_to_leader()'
   ),
@@ -144,8 +139,7 @@ target_list <- c(
   tar_target(
     distance_to_group_dir_leaders,
     distance_to_leader(
-      group_direction_leaders,
-      coords = coords
+      group_direction_leaders
     ),
     description = 'distance_to_leader()'
   ),
@@ -156,7 +150,6 @@ target_list <- c(
       DT = temporal_groups,
       threshold = spatial_threshold,
       id = id,
-      coords = coords,
       timegroup = timegroup,
       returnDist = returnDist,
       fillNA = fillNA
@@ -210,8 +203,7 @@ target_list <- c(
     centroid_fusion(
       edges = id_fusions,
       DT = temporal_groups,
-      id = id,
-      coords = coords
+      id = id
     ),
     description = 'centroid_fusion()'
   ),
@@ -221,8 +213,7 @@ target_list <- c(
     centroid_dyad(
       edges = id_dyads,
       DT = temporal_groups,
-      id = id,
-      coords = coords
+      id = id
     ),
     description = 'centroid_dyad()'
   ),
