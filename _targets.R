@@ -184,6 +184,16 @@ target_list <- c(
   ),
 
   tar_target(
+    direction_edges,
+    edge_direction(
+      edges = id_dyads,
+      DT = spatial_groups,
+      id = id
+    ),
+    description = 'edge_direction()'
+  ),
+
+  tar_target(
     id_fusions,
     fusion_id(
       edges = id_dyads,
